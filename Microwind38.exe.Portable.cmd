@@ -28,4 +28,4 @@ if not exist %LOCALAPPDATA% (
 	mkdir %LOCALAPPDATA%
 )
 
-start "" microwind.exe
+start "" Microwind38.exe
