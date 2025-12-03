@@ -23,8 +23,11 @@ jobs:
         .\1522859732.exe /PASSIVE /SILENT /NORESTART /NOAUTORUN /D="%cd%\installation" /CURRENTUSER /SHOWLOG /BYPASSCHECKS
 
     - shell: cmd
-      run: xcopy /H /Y /C "microwind.exe.Portable.cmd" "installation"
-        
+      run: xcopy /H /Y /C "Microwind38.exe.Portable.cmd" "installation\Microwind3.8\system"
+
+    - shell: cmd
+      run: xcopy /H /Y /C "Dsch38.exe.Portable.cmd" "installation\DSCH3.8\system"
+      
     - name: Archive Release
       uses: thedoctor0/zip-release@master
       with:
